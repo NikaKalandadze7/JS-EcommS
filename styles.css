@@ -21,6 +21,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 70vh;
 }
 
 .header {
@@ -129,16 +130,15 @@ button {
 }
 #cart-count {
   position: absolute;
-  top: 0;
-  right: 15px;
-
+  top: 3px;
+  left: 16px;
+  background-color: #e7a360;
   margin: auto;
   color: black;
-  border: 2px solid yellow;
   border-radius: 50%;
-  height: 18px;
-  width: 18px;
-  font-size: 10px;
+  height: 12px;
+  width: 12px;
+  font-size: 8px;
 }
 .shopping-cart {
   position: relative;
@@ -182,6 +182,19 @@ footer {
 .add-to-cart-btn:hover {
   background-color: #ecc810;
 }
+.proceed-to-checkout-btn {
+  border-radius: 20px;
+  max-width: 150px;
+  font-weight: 500;
+  width: 100%;
+  height: 25px;
+  background-color: #fed813;
+  font-size: 12px;
+  margin-top: 25px;
+}
+.proceed-to-checkout-btn:hover {
+  background-color: #ecc810;
+}
 .discounted {
   text-decoration: line-through;
   color: grey;
@@ -196,9 +209,10 @@ footer {
   flex-direction: column;
   flex-wrap: nowrap;
   max-width: 300px;
-  padding: 0 !important;
+  padding: 10px !important;
   margin: 0 !important;
   gap: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 .cart-item {
   display: flex;
@@ -252,7 +266,7 @@ footer {
 }
 .remove-from-cart-btn {
   height: 15px;
-  width: 50px;
+  max-width: 42px;
   font-size: 8px;
   border: 1px solid red;
   border-radius: 5px;

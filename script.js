@@ -65,7 +65,6 @@ function updateShoppingCart() {
     }
     productPrice.textContent = `$${totalPrice.toFixed(2)}`;
   });
-  getCartCount(shoppingCart);
 }
 
 fetch("https://dummyjson.com/products")
@@ -176,13 +175,3 @@ fetch("https://dummyjson.com/products")
     });
   })
   .catch((error) => console.log("error: ", error));
-
-let cartCount = 0;
-const cartCountDisplay = document.getElementById("cart-count");
-
-function getCartCount(cart) {
-  cart.forEach((product) => {
-    cartCount += product.count;
-  });
-  cartCountDisplay.textContent(cartCount);
-}
